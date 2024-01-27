@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="body_signin_signup">
+    <form id = "signupform" method="post" >
+        <div class="container">
+        <div class="card_signup">
+            <h1 class="header">Kayıt Ol</h1>
+            <div id="question1" class="question visible">
+              <label>Ad-Soyad:</label>
+              <input type="text" id="name" class="input" name= "name" required>
+              <input type="button" class="next-button btn" value="Sonraki Sayfa" onclick="controlName()">
+            </div>
+          
+            <div id="question1-next" class="question">
+              <label>E-posta:</label>
+              <input id="email" class="input" name="email" required>
+              <input type="button" class="next-button btn" value="Sonraki Sayfa" onclick="controlEmail()">
+            </div>
+          
+            <div id="question1-next-next" class="question">
+              <label>Şifre:</label>
+              <input type="password" id="password" name="password" class="input" required>
+              <input type="button" class="next-button btn" value="Sonraki Sayfa" onclick="controlPassword()">
+            </div>
+
+            <div id="question1-next-next-next" class="question">
+              <label>Şifre Tekrar:</label>
+              <input type="password" id="password2" name="password2" class="input" required>
+              <input type="button" class="next-button btn" value="Sonraki Sayfa" onclick="controlPasswordMatch()">
+            </div>
+
+            <div id="question1-next-next-next-next" class="question">
+              <label>Doğum Tarihi:</label>
+              <input type="text" id="birthdate" class="input" name="birthdate" required>
+              <input type="button" class="next-button btn" value="Sonraki Sayfa" onclick="controlBirthDate()">
+            </div>
+          
+            <div id="question1-next-next-next-next-next" class="question">
+              <label>TC Numarası:</label>
+              <input type="text" id="tc" class="input" name="tc" required>
+              <input type="button" class="next-button btn" value="Sonraki Sayfa" onclick="controlTC()">
+            </div>
+          
+            <div id="question1-next-next-next-next-next-next" class="question">
+              <label for="phone">Telefon:</label>
+              <input type="text" id="phone" class="input" name="phone" required>
+              <input type="button" class="submit-button btn" value="Hesabını Yarat" onclick="controlPhoneNumber()">
+            </div>
+            <div id="question1-next-next-next-next-next-next-next" class="question">
+               <h3>Kayıt Tamamlandı.</h3>
+            </div>            
+            
+            <p class="txt">Zaten bir hesabın var mı? <a href="sign_in.html"> Giriş Yap.</a></p>
+            
+        </div>
+    </div>
+    </form>
+     
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+
+</body></html>
+
